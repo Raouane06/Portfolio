@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raouane Krama - Computer Science Graduate | Web Developer">
+  <title>Raouane Krama | Computer Science Graduate</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Raouane Krama</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div> 
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Raouane Krama</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="c:\Users\Raouan\Downloads\avat2.png" alt="Raouane Krama profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Raouane Krama</h1>
+      <p class="section__text__p2">Computer Science Graduate</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https//www.linkedin.com/in/raouane-krama-67b02b338/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/Raouane06'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Web Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. in Computer Science<br />University of Biskra</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a recent Computer Science graduate from the University of Biskra, 
+            I bring a strong foundation in software development and problem-solving. 
+            My academic journey has equipped me with expertise in web technologies, 
+            database systems, and software engineering principles. I'm passionate 
+            about creating efficient, user-friendly applications and continuously 
+            expanding my technical skills in this dynamic field.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+  <section id="skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Technical Skills</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Frontend -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>HTML/CSS</h3>
+              <p>Advanced | Responsive Design, CSS Flex/Grid</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+              <p>Advanced | ES6+, DOM Manipulation, Async/Await</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>React</h3>
+              <p>Intermediate | Hooks, State Management</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>Node.js</h3>
+              <p>Intermediate | REST APIs, Express.js</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <p>Intermediate | Flask, Scripting</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>Java</h3>
+              <p>Basic | OOP, Spring Boot</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Databases</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>MySQL</h3>
+              <p>Advanced | Query Optimization, Joins</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>SQLite</h3>
+              <p>Intermediate | Lightweight DB Management</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Tools & Other -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Tools & Others</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>Git</h3>
+              <p>Advanced | Version Control, Collaboration</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>C++</h3>
+              <p>Basic | Data Structures, Algorithms</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <div>
+              <h3>Web Dev Tools</h3>
+              <p>Figma, Postman, VS Code</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Professional Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Web Development Intern</h2>
+          <h3>2023-Present</h3>
+          <div class="article-container">
+            <ul>
+              <li>Developed and maintained responsive web applications using HTML, CSS, and JavaScript</li>
+              <li>Collaborated with team members to implement new features and improve user experience</li>
+              <li>Participated in code reviews and debugging sessions</li>
+              <li>Assisted in database design and implementation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Freelance Developer</h2>
+          <h3>Self-Employed | 2022-Present</h3>
+          <div class="article-container">
+            <ul>
+              <li>Designed and developed custom websites for small businesses</li>
+              <li>Implemented SEO best practices to improve client visibility</li>
+              <li>Provided ongoing maintenance and support for client websites</li>
+              <li>Consulted with clients to understand their technical requirements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+ <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="projects-container">
+    <!-- Coffee Shop Project -->
+    <div class="project-card">
+      <div class="project-image-container">
+        <img src="c:\Users\Raouan\Videos\Captures\Coffee Shop - Brave 5_29_2025 8_19_06 PM (2).png" alt="Coffee Shop Website" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Coffee Shop E-commerce</h3>
+        <p class="project-description">
+          A responsive coffee shop website featuring product catalog, online ordering system,
+          and interactive UI elements. Designed to showcase premium coffee blends with
+          smooth animations and intuitive navigation.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Raouane06/Coffee-Shop" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="https://raouane06.github.io/Coffee-Shop/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Health Awareness Platform -->
+    <div class="project-card">
+      <div class="project-image-container">
+        <img src="c:\Users\Raouan\Videos\Captures\صحتك أولاً - دليلك للتعامل مع السكري وضغط الدم - Brave 5_29_2025 8_19_32 PM (2).png" alt="Health Awareness Platform" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Health Awareness Platform</h3>
+        <p class="project-description">
+          Comprehensive Arabic health portal for diabetes and blood pressure management.
+          Features educational resources, interactive tools, and prevention guides with
+          responsive design for all devices.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Raouane06/Health-Platform" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="#" class="project-link" style="background-color: #ccc; pointer-events: none;">
+            <i class="fas fa-external-link-alt"></i> Private Demo
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Add this with your other project cards -->
+<div class="project-card">
+  <div class="project-image-container">
+    <img src="d:\CS\S5\IHM\New folder\assets\1000002159.jpg" alt="Exam Calc System" class="project-img" />
+    <div class="project-overlay">
+      <div class="project-tech">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>JWT Auth</span>
+      </div>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3 class="project-title">Exam Calc Academic System</h3>
+    <p class="project-description">
+      A comprehensive university grade management system with dual interfaces for professors and students.
+      Professors can input grades and post announcements, while students can calculate averages,
+      track progress, and receive notifications. Includes data visualization and reporting.
+    </p>
+    <div class="project-links">
+      <a href="https://github.com/Raouane06/Exam-Calc-System" target="_blank" class="project-link">
+        <i class="fab fa-github"></i> Code
+      </a>
+      <a href="https://raouane06.github.io/Exam-Calc-System/" target="_blank" class="project-link">
+        <i class="fas fa-external-link-alt"></i> Live Demo
+      </a>
+    </div>
+  </div>
+</div>
+
+    <!-- Breast Cancer Awareness -->
+    <div class="project-card">
+      <div class="project-image-container">
+        <img src="c:\Users\Raouan\Videos\Captures\التوعية بسرطان الثدي - معاً للوقاية والعلاج - Brave 5_29_2025 8_19_19 PM (2).png" alt="Breast Cancer Awareness" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Breast Cancer Awareness</h3>
+        <p class="project-description">
+          Arabic educational website promoting breast cancer awareness and early detection.
+          Includes self-examination guides, prevention tips, and resources with
+          culturally-sensitive design for North African audiences.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Raouane06/Breast-Cancer-Awareness" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="#" class="project-link" style="background-color: #ccc; pointer-events: none;">
+            <i class="fas fa-external-link-alt"></i> Private Demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Student Attendance System -->
+    <div class="project-card">
+      <div class="project-image-container">
+        <img src="d:\CS\S5\IHM\New folder\assets\attendence.jpg" alt="Student Attendance System" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-tech">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">University Attendance System</h3>
+        <p class="project-description">
+          Official student attendance tracking system for University of Biskra.
+          Features secure login, attendance recording, and pedagogical monitoring
+          with administrative dashboard and reporting tools.
+        </p>
+        <div class="project-links">
+          <a href="#" class="project-link" style="background-color: #ccc; pointer-events: none;">
+            <i class="fab fa-github"></i> Institutional Code
+          </a>
+          <a href="#" class="project-link" style="background-color: #ccc; pointer-events: none;">
+            <i class="fas fa-external-link-alt"></i> Private System
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task Management App -->
+    <div class="project-card">
+      <div class="project-image-container">
+        <img src="c:\Users\Raouan\Videos\Captures\ToDo Application 12_28_2024 6_18_34 PM.png" alt="Task Management Application" class="project-img" />
+        <div class="project-overlay">
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Task Management System</h3>
+        <p class="project-description">
+          Full-stack productivity application with user authentication, task categorization,
+          and deadline reminders. Features drag-and-drop interface and team collaboration tools.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Raouane06/Task-Manager" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+          <a href="https://raouane06.github.io/Task-Manager/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <a href="mailto:raouane_krama@univ-biskra.dz" class="contact-link">kramaraouan@gmail.com</a>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <a href="https://www.linkedin.com/in/raouane-krama-67b02b338/" class="contact-link">LinkedIn</a>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="Github icon" class="icon contact-icon" />
+        <a href="https://github.com/Raouane06" class="contact-link">GitHub</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Raouane Krama. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
